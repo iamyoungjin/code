@@ -1,7 +1,7 @@
 import sys
 
 if __name__=="__main__":
-
+	print('start')
 	INF = int(1e9)
 	input = sys.stdin.readline
 	n,m = map(int,input().split())
