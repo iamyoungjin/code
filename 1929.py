@@ -1,16 +1,6 @@
 import sys
 import math
-'''
-if __name__=="__main__":
-	input = sys.stdin.readline
-	m,n = map(int,input().split())
 
-	for i in range(m,sqrt(m)+1):
-		if n%i != 0:
-			print(i)
-
-
-'''
 
 def isPrime(n):
 	if i == 1:

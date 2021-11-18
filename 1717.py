@@ -1,8 +1,6 @@
 #union find
 import sys
 
-
-
 def union(a,b):
 	a = find(a)
 	b = find(b)
