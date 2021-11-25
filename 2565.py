@@ -25,23 +25,4 @@ if __name__=="__main__":
 
 	print('ans->',n-max(dp))
 #전기줄이 교차하지 않을 조건 (500이하의 자연수)
-'''
-*LIS
-한 기둥을 기준으로 더 밑에 들어있는 숫자가 위에서 선택한 반대쪽 기둥으 수보다 높은 수를 선택하면 안됨
-
-N = int(input())
-
-lineList = []
-
-for _ in range(N):
-    lineList.append(list(map(int, input().split())))
-
-lineList.sort()
-
-dp = [1]*N
-for i in range(N):
-    for j in range(i):
-        if lineList[i][1] > lineList[j][1] and dp[i] < dp[j]+1:
-            dp[i] = dp[j] + 1
-print(N-max(dp))
-'''
+#선이 겹치는 경우: 정렬후 값이 큰 숫자에서 더 작은수의 연결 수보다 작은수 로 연결되는 경우
